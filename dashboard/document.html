@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/document.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo"><img src="./images/logo.png" alt=""></div>
+                <div class="user">
+                    <div class="user-image"><img src="./images/user.png" alt=""></div>
+                    <div class="username-text">
+                        <div class="username">Carolina Mayer</div>
+                        <div class=company-name>Company Super Admin</div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu">
+                <div class="menu-item active">
+                    <div class="menu-item-icon"><img src="./images/home.png"></div>
+                    <div class="menu-item-text">Home</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-icon"><img src="./images/document.png"></div>
+                    <div class="menu-item-text">Documents</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-icon"><img src="./images/Contacts.png"></div>
+                    <div class="menu-item-text">Contacts</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-icon"><img src="./images/Recordings.png"></div>
+                    <div class="menu-item-text">Recordings</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-icon"><img src="./images/user-management.png"></div>
+                    <div class="menu-item-text">User Management</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-icon"><img src="./images/translate.png"></div>
+                    <div class="menu-item-text">Interpreter Managment</div>
+                </div>
+                <div class="menu-item">
+                    <div class="menu-item-icon"><img src="./images/Locations.png"></div>
+                    <div class="menu-item-text">locations</div>
+                </div>
+            </div>
+
+            <div class="logout">
+                <div class="logout-button">
+                  <img src="./images/logout.png" alt="">
+                  <span>Log Out</span>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="content-header">
+                <div class="content-title-container">
+                    <div class="content-title">Documents</div>
+                    <div class="content-header-icons">
+                        <div class="content-header-icon"><img src="./images/help.png" alt=""></div>
+                        <div class="content-header-icon"><img src="./images/notification.png" alt=""></div>
+                        <div class="content-header-icon settings-icon"><img src="./images/settings.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main-content">
+                <div class="document-content">
+                    <div class="filters">
+                        <div class="form">
+                            <select name="category">
+                                <option value="category">Category</option>
+                                <option value="show_all">Show All</option>
+                                <option value="financial">Financial</option>
+                                <option value="technology">Technology</option>
+                                <option value="healthcare">Healthcare</option>
+                            </select>
+
+                            <select name="filters">
+                                <option value="filters">Filters</option>
+                                <option value="show_all">Show All</option>
+                                <option value="type">Type</option>
+                                <option value="date">Date</option>
+                                <option value="status">Status</option>
+                            </select>
+
+                            <button><img src="./images/search.png" alt=""></button>
+
+                        </div>
+                        <div class="upload">
+                            <button>Upload document</button>
+                        </div>
+                    </div>
+
+                    <div class="grid">
+                        <div class="grid-header">
+                            <div class="grid-name-container">
+                                <div class="directory-icon"><img src="./images/directory-icon.png" alt=""></div>
+                                <div class="grid-name">Document list</div>
+                                <div class="grid-header-line"></div>
+                                <div class="grid-items-count">12 Items</div>
+                            </div>
+                            <div class="pagination">
+                                <div class="page-quantity">
+                                    <span>Quantity:</span>
+                                    <select name="pages">
+                                        <option value="55">55</option>
+                                    </select>
+                                </div>
+                                <div class="page-number">
+                                    <div class="page-number-item active">1</div>
+                                    <div class="page-number-item">2</div>
+                                    <div class="page-number-item">3</div>
+                                    <div class="page-number-item dot">...</div>
+                                    <div class="page-number-item">4</div>
+
+                                </div>
+                                <div class="go-to">
+                                    <span>Go To:</span>
+                                    <input type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid-content">
+                            <div class="grid-item grid-item-header">
+                                <div class="grid-document-name">Document Name</div>
+                                <div class="grid-type">Type</div>
+                                <div class="grid-date">Date</div>
+                                <div class="grid-status">Status</div>
+                                <div class="grid-actions">Actions</div>
+                            </div>
+
+                            <div class="grid-item">
+                                <div class="grid-document-name">Interview</div>
+                                <div class="grid-type"><img src="./images/pdf-icon.png" alt=""> <span>PDF</span></div>
+                                <div class="grid-date">09.12.2020</div>
+                                <div class="grid-status"><span class="grid-status-value">Active</span></div>
+                                <div class="grid-actions"><img src="./images/actions.png" alt=""></div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="grid-document-name">Interview</div>
+                                <div class="grid-type"><img src="./images/pdf-icon.png" alt=""> <span>PDF</span></div>
+                                <div class="grid-date">09.12.2020</div>
+                                <div class="grid-status"><span class="grid-status-value">Active</span></div>
+                                <div class="grid-actions"><img src="./images/actions.png" alt=""></div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="grid-document-name">Interview</div>
+                                <div class="grid-type"><img src="./images/word-icon.png" alt=""> <span>Word</span></div>
+                                <div class="grid-date">09.12.2020</div>
+                                <div class="grid-status"><span class="grid-status-value">Active</span></div>
+                                <div class="grid-actions"><img src="./images/actions.png" alt=""></div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="grid-document-name">Interview</div>
+                                <div class="grid-type"><img src="./images/excel-icon.png" alt=""> <span>XLSX</span></div>
+                                <div class="grid-date">09.12.2020</div>
+                                <div class="grid-status"><span class="grid-status-value">Active</span></div>
+                                <div class="grid-actions"><img src="./images/actions.png" alt=""></div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="grid-document-name">Interview</div>
+                                <div class="grid-type"><img src="./images/excel-icon.png" alt=""> <span>XLSX</span></div>
+                                <div class="grid-date">09.12.2020</div>
+                                <div class="grid-status"><span class="grid-status-value">Active</span></div>
+                                <div class="grid-actions"><img src="./images/actions.png" alt=""></div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="grid-document-name">Interview</div>
+                                <div class="grid-type"><img src="./images/pdf-icon.png" alt=""> <span>PDF</span></div>
+                                <div class="grid-date">09.12.2020</div>
+                                <div class="grid-status"><span class="grid-status-value">Active</span></div>
+                                <div class="grid-actions"><img src="./images/actions.png" alt=""></div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="grid-document-name">Interview</div>
+                                <div class="grid-type"><img src="./images/pdf-icon.png" alt=""> <span>PDF</span></div>
+                                <div class="grid-date">09.12.2020</div>
+                                <div class="grid-status"><span class="grid-status-value">Active</span></div>
+                                <div class="grid-actions"><img src="./images/actions.png" alt=""></div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="grid-document-name">Interview</div>
+                                <div class="grid-type"><img src="./images/word-icon.png" alt=""> <span>Word</span></div>
+                                <div class="grid-date">09.12.2020</div>
+                                <div class="grid-status"><span class="grid-status-value">Active</span></div>
+                                <div class="grid-actions"><img src="./images/actions.png" alt=""></div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="grid-document-name">Interview</div>
+                                <div class="grid-type"><img src="./images/pdf-icon.png" alt=""> <span>PDF</span></div>
+                                <div class="grid-date">09.12.2020</div>
+                                <div class="grid-status"><span class="grid-status-value deactive">Deactive</span></div>
+                                <div class="grid-actions"><img src="./images/actions.png" alt=""></div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="grid-document-name">Interview</div>
+                                <div class="grid-type"><img src="./images/excel-icon.png" alt=""> <span>XLSX</span></div>
+                                <div class="grid-date">09.12.2020</div>
+                                <div class="grid-status"><span class="grid-status-value deactive">Deactive</span></div>
+                                <div class="grid-actions"><img src="./images/actions.png" alt=""></div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="grid-document-name">Interview</div>
+                                <div class="grid-type"><img src="./images/excel-icon.png" alt=""> <span>XLSX</span></div>
+                                <div class="grid-date">09.12.2020</div>
+                                <div class="grid-status"><span class="grid-status-value">Active</span></div>
+                                <div class="grid-actions"><img src="./images/actions.png" alt=""></div>
+                            </div>
+                            <div class="grid-item">
+                                <div class="grid-document-name">Interview</div>
+                                <div class="grid-type"><img src="./images/excel-icon.png" alt=""> <span>XLSX</span></div>
+                                <div class="grid-date">09.12.2020</div>
+                                <div class="grid-status"><span class="grid-status-value">Active</span></div>
+                                <div class="grid-actions"><img src="./images/actions.png" alt=""></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./scripts/script.js"></script>
+</body>
+</html>

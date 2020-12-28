@@ -1,0 +1,270 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  background-color: #EFF4FF;
+}
+
+.container .sidebar {
+  height: 100%;
+  width: 20%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #EFF4FF;
+}
+
+.container .sidebar .sidebar-header {
+  width: 100%;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  vertical-align: middle;
+  background: linear-gradient(91.39deg, #4568DC -2.02%, #00B4DB 118.83%);
+}
+
+.container .sidebar .sidebar-header .logo {
+  margin-top: 30px;
+  margin-bottom: 95px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .sidebar .sidebar-header .user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .sidebar .sidebar-header .user .user-image {
+  margin-right: 10px;
+}
+
+.container .sidebar .sidebar-header .user .user-image img {
+  width: 100%;
+}
+
+.container .sidebar .sidebar-header .user .username-text .username {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: capitalize;
+  margin-bottom: 17px;
+  color: #FFFFFF;
+}
+
+.container .sidebar .sidebar-header .user .username-text .company-name {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  /* identical to box height */
+  text-transform: capitalize;
+  color: #E5E5E5;
+}
+
+.container .sidebar .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 30px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .sidebar .menu .menu-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 15px 0px 15px 50px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.container .sidebar .menu .menu-item .menu-item-icon {
+  margin-right: 14px;
+}
+
+.container .sidebar .menu .menu-item .menu-item-text {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: capitalize;
+  color: #878787;
+}
+
+.container .sidebar .menu .menu-item.active {
+  background: linear-gradient(91.39deg, #4568DC -2.02%, #00B4DB 118.83%);
+  -webkit-box-shadow: 0px 4px 10px rgba(41, 122, 179, 0.3);
+          box-shadow: 0px 4px 10px rgba(41, 122, 179, 0.3);
+  border-radius: 0px;
+  padding-left: 30px;
+}
+
+.container .sidebar .menu .menu-item.active .menu-item-icon {
+  border-left: solid #FFFFFF 3px;
+  padding-left: 20px;
+}
+
+.container .sidebar .menu .menu-item.active .menu-item-text {
+  color: #ffffff;
+}
+
+.container .sidebar .logout {
+  color: #ffffff;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.container .sidebar .logout .logout-button {
+  width: 100%;
+  height: 56px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #37A0EA;
+  border-radius: 15px;
+}
+
+.container .sidebar .logout .logout-button img {
+  margin-right: 14px;
+}
+
+.container .sidebar .logout .logout-button span {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  padding-left: 20px;
+  border-left: 3px solid #ffffff;
+}
+
+.container .content {
+  height: 100%;
+  width: 80%;
+  background-color: #ffffff;
+  position: absolute;
+  right: 0;
+}
+
+.container .content .content-header {
+  background: linear-gradient(91.39deg, #4568DC -2.02%, #00B4DB 118.83%);
+  height: 300px;
+}
+
+.container .content .content-header .content-title-container {
+  padding: 30px 40px 0 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .content .content-header .content-title-container .content-title {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: capitalize;
+  color: #FFFFFF;
+}
+
+.container .content .content-header .content-title-container .content-header-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.container .content .content-header .content-title-container .content-header-icons .content-header-icon {
+  padding-right: 24px;
+  padding-left: 24px;
+  border-right: 1px solid #56E86D;
+  cursor: pointer;
+}
+
+.container .content .content-header .content-title-container .content-header-icons .content-header-icon:last-child {
+  border-right: none;
+}
+
+.container .content .main-content {
+  width: 97%;
+  height: 100%;
+  background: #ffffff;
+  position: absolute;
+  top: 92px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+/*# sourceMappingURL=main.css.map */
